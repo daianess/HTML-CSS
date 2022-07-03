@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #dce3e6;
+}
+
+.sky {
+  width: 100%;
+  height: 60vh;
+  background-color: #3fa6d7;
+}
+
+#sun {
+  z-index: -1;
+  width: 180px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 130px;
+  text-align: center;
+  transform-origin: bottom center;
+}
+
+.ground {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 20vh;
+  background-color: green;
+}
+
+.object {
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 130px;
+  text-align: center;
+  transform-origin: center center;
+  transform: translatey(-30%);
+}
+
+#shadow {
+  background: #000000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform-origin: center center;
+  transform: translatey(-84px) rotatex(75deg) rotatez(180deg);
+}
+
+
+.sun-range {
+  width: 400px;
+  padding: 10px;
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffff;
+  border-radius: 10px;
+  font-family: Poppins;
+  text-align: center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 60%;
+  height: 10px;
+  border-radius: 10px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #d66f30;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d66f30;
+  cursor: pointer;
+}
